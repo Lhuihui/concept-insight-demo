@@ -1,0 +1,15 @@
+// @import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.base--a,
+.base--STYLED a {
+  @extend %base--a;
+
+  &.display-block{ 
+	display: block;
+  }
+}

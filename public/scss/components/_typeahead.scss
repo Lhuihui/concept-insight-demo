@@ -1,0 +1,48 @@
+.tt {
+    &-menu {
+	width: 25em;
+	background-color: white;
+	padding: 8px 0;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	top: 21px!important;
+	left: -12px!important;
+    }
+
+    &-suggestion {
+	font-size: 0.9em;
+	padding: 3px 20px;
+	color: #000;
+		&:hover {
+		    color: #fff;
+		    background-color: #0097cf;
+		}
+		&.tt-cursor {
+		    color: #fff;
+		    background-color: #0097cf;
+		}
+		.concept-abstract {
+		    font-size: 0.9em;
+		}
+		.pull-right {
+		    float: right;
+		    margin: 0px;
+		}
+		strong {
+	    	float: left;
+	    }
+	    br {
+	    	margin: 0rem;
+	    }
+    }
+
+    &--search-hint{
+    	padding: setting-get('rhythm') / 2;
+    	color: color('grayscale', 100);
+    	font-size: ms(-1);
+    }
+}
+
+.twitter-typeahead {
+    width:100%;
+}

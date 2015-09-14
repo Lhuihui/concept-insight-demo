@@ -1,0 +1,106 @@
+<div class="_demo--input">
+	<div class="_demo--container">
+		<h2 class="base--h2">
+				Try the service
+			</h2>
+		<p class="base--p _content--description">
+		  This service uses a pre-existing graph of concepts (based on Wikipedia) to surface the concepts in your input. It will use these concepts to recommend relevant content from the corpus you ingest.
+		  For this demo, discover <a class="base--a" href="https://www.ted.com/talks" target="blank">TED talks</a> using topics, words, or concepts. Or, paste in some text and we'll identify the concepts for you.
+
+		</p>
+		<div class="_content--input">
+		  <h3 id="try-this-service" class="base--h3 _content--input-title">
+					Input
+				</h3>
+		  <span class="icon-hyperlink">
+			  <span class="icon icon-reset"></span>
+			  <button class="base--a reset-button" href="" type="reset">
+				Reset
+			  </button>
+		  </span>
+		  <div class="input">
+			<div class="input--form">
+			  <div class="input--tab-panels-container">
+				<div class="tab-panels" role="tabpanel">
+				  <ul class="tab-panels--tab-list" role="tablist">
+					<li class="tab-panels--tab-list-item base-li" role="presentation">
+					  <a class="tab-panels--tab base--a active" href="#concepts-panel" aria-controls="concepts" role="tab">Concepts</a>
+					</li>
+					<li class="tab-panels--tab-list-item base-li" role="presentation">
+					  <a class="tab-panels--tab base--a" href="#text-panel" aria-controls="text" role="tab">Body of Text</a>
+					</li>
+				  </ul>
+				  <div class="tab-panels--tab-content">
+					<div id="concepts-panel" class="tab-panels--tab-pane active" role="tab-panel">
+					  <div class="concept--input-concept-list">
+						<div class="concept">
+						  <div class="concept--new-concept-container active">
+							<span>+</span>
+							<span>add concept</span>
+						  </div>
+						  <div class="concept--input-container">
+							 <input class="concept--input" type="text">
+						  </div>
+						</div>
+					  </div>
+					  <span class="icon-hyperlink">
+						<span class="icon icon-code icon-code-disabled"></span>
+						<button id="label-search-view-code-btn" class="base--a tab-panels--view-code"
+							href="" onclick="show_label_search_response()"
+							type="reset" disabled>
+							View JSON
+					    </button>
+					  </span>
+					</div>
+					<div id="text-panel" class="tab-panels--tab-pane" role="tab-panel">
+					  <a id="sample-1" class="base--a tab-panels--example-link">Example 1</a>
+					  <a id="sample-2" class="base--a tab-panels--example-link">Example 2</a>
+					  <div id="body-of-text" class="concept--abstract-concept-textarea base--textarea" contenteditable="true">
+					  </div>
+					  <div class="concept--abstract-concept-container">
+						<div class="concept--abstract-concept-title">
+						  Top 3 Abstracted Concepts:
+						</div>
+						<div class="concept--abstract-concept-list">
+						</div>
+						<span class="icon-hyperlink">
+							<span class="icon icon-code icon-code-disabled"></span>
+							<button id="text-annotator-view-code-btn" class="base--a tab-panels--view-code" href="" onclick="show_text_annotator_response()" type="reset" disabled>
+						  		View JSON
+							</button>
+						</span>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div id="concepts-panel-API" class="input--API input--json-container">
+			    <pre class="base--pre API--json language-javascript">
+					<code id="concepts-panel-API-data" class="base--code language-javascript">
+					</code>
+				</pre>
+			</div>
+			<div id="text-panel-API" class="input--API input--json-container">
+			    <pre class="base--pre API--json language-javascript">
+					<code id="text-panel-API-data" class="base--code language-javascript">
+					</code>
+				</pre>
+			</div>
+			<div id="concepts-panel-endpoint" class="input--endpoint active">
+			  The service is using the
+			  <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/apis/#!/concept-insights" class="base--a" target="new"><code>label_search</code></a> API to help you choose concepts. For an in-depth explanation, visit the
+			  <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/concept-insights/" class="base--a" target="new">Documentation</a>.
+			</div>
+			<div id="text-panel-endpoint" class="input--endpoint">
+			  The service is using the
+			  <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/apis/#!/concept-insights" class="base--a"><code>annotate_text</code></a> API to help you abstract concepts. For an in-depth explanation, visit the
+			  <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/concept-insights/" class="base--a" target="new">Documentation</a>.
+			</div>
+		  </div>
+		</div>
+		<div class="_content--loading">
+		  <img src="images/loading-indicator.gif" width="100px" alt="">
+		</div>
+	</div>
+</div>

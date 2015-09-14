@@ -1,0 +1,35 @@
+._TED-panel{
+
+	border: 2px solid color('neutral-white', 40);
+	background-color: setting-get('white');
+	padding: setting-get('rhythm') / 2;
+
+
+	&--TED{
+
+		@include breakpoint(675px){
+			float: left;
+			width: 48%;
+		}
+
+		@include breakpoint(1200px){
+			float: left;
+			width: 48%;
+		}
+
+	}
+
+	&--how-it-works{
+		margin-top: setting-get('rhythm') / 4;
+		@include breakpoint(675px){
+			float: right;
+			width: 48%;
+		}
+
+		@include breakpoint(1200px){
+			float: right;
+			width: 48%;
+		}
+
+	}
+}

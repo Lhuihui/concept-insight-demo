@@ -1,0 +1,220 @@
+.concept{
+	background-color: color('neutral-white', 30);
+	display: inline-block;
+	margin-right: setting-get('rhythm') / 4;
+	margin-top: setting-get('rhythm') / 2;
+
+	&--new-concept-container{
+		padding: 0.8em 1em;
+		color: setting-get('secondary color');
+		cursor: pointer;
+		border-bottom: 2px solid transparent;
+		background-color: setting-get('white');
+		display: none;
+
+		&:hover{
+			border-bottom: 0.125em solid setting-get('secondary color');
+		}
+
+		&.active{
+			display: block;
+		}
+	}
+
+	&--input-container{
+		margin-top: 0;
+		padding: 0.7em 0.8em;
+		color: color('grayscale', 60);
+		border-bottom: 0.125em solid setting-get('secondary color');
+		display: none;
+		background-color: setting-get('white');
+		position: relative;
+
+		&.active{
+			display: block;
+		}
+	}
+
+	&--input{
+		border: 0;
+		background-color: setting-get('white');
+		color: color('grayscale', 80);
+
+		&:focus{
+		    outline: 0;
+		}
+	}
+
+	&--auto-complete{
+		position: absolute;
+		background-color: setting-get('primary color');
+		margin-top: 0;
+		top: 3.2em;
+		left: 0;
+		color: #fff;
+	}
+
+	&--auto-complete-list-item{
+		padding: 0.5em 1em;
+		margin-top: 0;
+		border-bottom: 0.125em solid #fff;
+		width: 12.6em;
+
+	}
+
+	&--typed-concept-container{
+		margin-top: 0;
+		border-left: 0.25em solid setting-get('secondary color');
+		padding: 0.8em 1em;
+		color: color('grayscale', 80);
+		background-color: setting-get('white');
+		display: none;
+
+		&.active{
+			display: block;
+		}
+	}
+
+	&--your-input{
+		margin-top: setting-get('rhythm') / 4;
+		border-left: 0.25em solid setting-get('secondary color');
+		padding: 0.8em 1em;
+		color: color('grayscale', 80);
+		background-color: color('neutral-white', 30);
+		display: inline-block;
+		position: relative;
+
+		&:after{
+			height: 0.5em;
+			width: 4em;
+			content: '';
+			position: absolute;
+			top: 3.1em;
+			left: -0.25em;
+			border-left: 0.25em solid color('grayscale', 70);
+		}
+
+	}
+
+	&--your-input-legend{
+		margin-top: setting-get('rhythm') / 4;
+		border-left: 0.25em solid setting-get('secondary color');
+		padding: 0.8em 1em;
+		color: color('grayscale', 80);
+		background-color: color('neutral-white', 30);
+		display: inline-block;
+		position: relative;
+
+	}
+
+	&--your-input-label{
+		position: relative;
+		top: -0.4em;
+		color: color('grayscale', 80);
+	}
+
+	&--your-input-list-item{
+		margin-top: 0;
+	}
+
+	&--derived-concept-list{
+		margin-top: 1.4em;
+	}
+
+	&--derived-concept-list-item{
+		margin-top: 0;
+	}
+
+	&--derived-concept{
+		position: relative;
+		margin-left: 4em;
+		margin-top: setting-get('rhythm') / 4;
+		border-left: 0.25em solid color('teal', 60);
+		padding: 0.8em 1em;
+		color: color('grayscale', 80);
+		background-color: color('neutral-white', 30);
+		display: inline-block;
+		cursor: pointer;
+
+		&:hover{
+			border-left: 0.25em solid setting-get('primary accent color');
+		}
+
+		&.active{
+			border-left: 0.25em solid setting-get('primary accent color');
+		}
+
+		&:before{
+			height: 3.6em;
+			width: 4em;
+			content: '';
+			position: absolute;
+			top: -1.9em;
+			left: -4.25em;
+			border-left: 0.25em solid color('grayscale', 70);
+			border-bottom: 0.25em solid color('grayscale', 70);
+		}
+
+
+	}
+
+	&--derived-concept-legend{
+		position: relative;
+		margin-left: 1em;
+		margin-top: setting-get('rhythm') / 4;
+		border-left: 0.25em solid color('teal', 60);
+		padding: 0.8em 1em;
+		color: color('grayscale', 80);
+		background-color: color('neutral-white', 30);
+		display: inline-block;
+	}
+
+	&--derived-concept-label{
+		position: relative;
+		top: -0.4em;
+		color: color('grayscale', 80);
+	}
+
+	&--abstract-concept-container{
+		margin-top: 0;
+	}
+
+	&--abstract-concept-title{
+		color: color('grayscale', 80);
+		margin-top: setting-get('rhythm') / 4;
+		font-size: ms(-1);
+		display: none;
+
+		&.active{
+			display: block;
+		}
+	}
+
+	&--abstract-concept-textarea{
+		margin-top: 0;
+		height: 5em;
+		overflow-y: auto;
+		white-space: pre-line; 
+	}
+
+	&--abstract-concept-list{
+		margin-top: 0;
+	}
+
+	&--abstract-concept-list-container{
+		border-left: 0.25em solid setting-get('secondary color');
+		padding: setting-get('rhythm') / 4 1em;
+		color: color('grayscale', 80);
+		background-color: setting-get('white');
+		display: inline-block;
+		margin-left: setting-get('rhythm') / 4;
+		margin-top: setting-get('rhythm') / 4;
+
+	}
+
+	&--close-icon{
+		color: setting-get('secondary color');
+		cursor: pointer;
+		margin-left: setting-get('rhythm') / 4;
+	}
+}

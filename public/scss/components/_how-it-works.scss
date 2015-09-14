@@ -1,0 +1,10 @@
+.how-it-works{
+	&--passage{
+		display: none;
+		margin-top: 0;
+
+		&.active{
+			display: block;
+		}
+	}
+}

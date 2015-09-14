@@ -1,0 +1,52 @@
+.toggle{
+
+	&--content{
+		display: none;
+
+		&.active{
+			display: block;
+		}
+	}
+
+	&--content-api{
+		background-color: color('grayscale', 90);
+		border: 2px solid color('grayscale', 90);
+		padding: setting-get('rhythm') / 2;
+		margin-top: 0;
+	}
+
+	&--TED-tab{
+		background-color: color('grayscale', 30);
+		padding: setting-get('rhythm') / 3 setting-get('rhythm') / 2;
+		color: color('grayscale', 90);
+		font-size: ms(-1);
+		cursor: pointer;
+
+		&.active{
+			background-color: setting-get('primary color');
+			color: setting-get('white');
+		}
+
+	}
+
+	&--rest-api{
+		background-color: color('grayscale', 30);
+		padding: setting-get('rhythm') / 3 setting-get('rhythm') / 2;
+		color: color('grayscale', 90);
+		font-size: ms(-1);
+		cursor: pointer;
+
+		&.active{
+			background-color: color('gray', core);
+			color: setting-get('white');
+		}
+
+	}
+
+	&--content-API{
+		background-color: color('grayscale', 70);
+		border: 2px solid color('grayscale', 70);
+		padding: setting-get('rhythm') / 2;
+		margin-top: 0;
+	}
+}

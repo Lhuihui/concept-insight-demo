@@ -1,0 +1,30 @@
+//////////////////////////////
+// Vendors
+//////////////////////////////
+@import 'vendors/prism/prism';
+
+@import 'patterns/watson-service-demo-patterns';
+
+//////////////////////////////
+// Components
+//////////////////////////////
+@import 'components/wordmark';
+@import 'components/heading-nav';
+@import 'components/icon-hyperlink';
+@import 'components/banner';
+@import 'components/tab-panels';
+@import 'components/input';
+@import 'components/concept';
+@import 'components/API';
+@import 'components/TED';
+@import 'components/typeahead';
+@import 'components/toggle';
+@import 'components/how-it-works';
+
+//////////////////////////////
+// Layouts
+//////////////////////////////
+@import 'layouts/demo';
+@import 'layouts/content';
+@import 'layouts/TED-panel';
+

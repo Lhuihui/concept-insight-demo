@@ -1,0 +1,37 @@
+._content{
+
+	&--output{
+		margin-top: setting-get('rhythm') / 2;
+	}
+
+	&--output-des{
+		margin-top: 0;
+	}
+
+	&--description{
+		margin-top: 0;
+	}
+
+	&--toggle-tab{
+		float: left;
+	}
+
+	&--concept-legend{
+		float: right;
+		border: 2px solid color('neutral-white', 40);
+		background-color: setting-get('white');
+		padding: 0 setting-get('rhythm') / 4;
+		margin-bottom: 0.8em;
+		margin-top: setting-get('rhythm') / 4;
+	}
+
+	&--loading{
+		text-align: center;
+		display: none;
+	}
+
+	&--input-title{
+		float: left;
+	}
+
+}	

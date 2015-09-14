@@ -1,0 +1,32 @@
+.API{
+
+	&--response-container{
+		height: 100%;
+		position: relative;
+	}
+
+	&--title{
+		color: color('white');
+	}
+
+	&--data{
+		color: color('grayscale', 50);
+		height: 100%;
+		position: relative;
+	}
+
+	&--data-pre{
+		height: 100%;
+	}
+
+	&--json {
+		white-space: normal;
+		height: 100%;
+	}
+
+
+}
+
+pre[class*=" language-"] {
+	white-space: normal;
+}

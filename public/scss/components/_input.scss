@@ -1,0 +1,42 @@
+.input {
+
+	&--API{
+		background-color: color('grayscale', 90);
+		border: 2px solid color('grayscale', 70);
+		margin-top: 0;
+		width: 100%;
+		color: setting-get('white');
+
+		display: none;
+		height: 15em;
+		overflow: auto;
+
+		&.active{
+			display: block;
+		}
+	}
+
+	&--endpoint{
+		font-size: ms(-1);
+		color: color('gray', 50);
+		padding: 0 setting-get('rhythm') / 2;
+		display: none;
+
+		&.active{
+			display: block;
+		} 
+	}
+
+	&--ted-endpoint{
+		font-size: ms(-1);
+		color: color('gray', 50);
+		padding: 0 setting-get('rhythm') / 2;
+		float: left;
+	}
+
+	&--json-container{
+		overflow: hidden;
+	}
+
+
+}

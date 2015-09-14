@@ -1,0 +1,74 @@
+.TED{
+
+	&--info-above{
+		@include breakpoint(675px){
+			display: none;
+		}
+
+	}
+
+	&--info-below{
+		margin-top: 0;
+		display: none;
+
+		@include breakpoint(675px){
+			display: block;
+		}
+
+	}
+
+
+	&--title{
+		font-weight: 600;
+		color: setting-get('secondary color');
+		font-size: ms(1);
+		text-decoration: none;
+	}
+
+	&--author{
+		font-size: ms(-1);
+		color: color('grayscale', 80);
+		margin: setting-get('rhythm') / 4 0;
+		font-weight: 500;
+	}
+
+	&--score{
+		font-size: ms(-1);
+		color: color('teal', 50);
+		margin: setting-get('rhythm') / 4 0;
+	}
+
+	&--img{
+		margin-top: 0;
+		width: 100%;
+
+		@include breakpoint(675px){
+			margin-top: setting-get('rhythm') / 2;
+		}
+
+	}
+
+	&--score-value{
+		font-weight: 500;
+	}
+
+	&--JSON{
+		background-color: color('grayscale', 90);
+		height: 24em;
+		position: relative;
+	}
+
+	&--code{
+		height: 100%;
+	}
+
+	&--code-container{
+		display: none;
+
+		&.active{
+			display: block;
+		}
+	}
+
+
+}

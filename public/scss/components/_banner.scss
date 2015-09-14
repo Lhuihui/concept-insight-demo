@@ -1,0 +1,70 @@
+.banner {
+	@include add-gutter(0);
+}
+
+.banner--service-icon{
+	vertical-align: middle;
+	margin-top: setting-get('rhythm') / 4;
+
+	@include breakpoint(500px){
+		width: 6.25em;
+	}
+
+	@include breakpoint(700px){
+		width: 8.125em;
+	}
+}
+
+.banner--service-icon_INLINE {
+	vertical-align: middle;
+	display: none;
+	height: 1.25em;
+	margin-top: #{(-11/40)}em;	// -11px
+	@include breakpoint(500px){
+		display: none;
+	}
+}
+
+.banner--service-icon-container{
+	display: none;
+	@include float-span(12);
+
+	@include breakpoint(500px){
+		display: block;
+		margin-top: setting-get('rhythm') / 2;
+	}
+
+	@include breakpoint(700px){
+		@include float-span(2, $gutter: 1rem);
+		display: inline-block;
+	}
+
+
+}
+
+.banner--service-info{
+
+	@include breakpoint(700px){
+		@include float-span(10);
+		display: inline-block;
+	}
+}
+
+.banner--service-title{
+	@include float-span(12);
+}
+
+.banner--service-links{
+	margin-left: setting-get('rhythm') / 2;
+	margin-left: 1.35rem;
+}
+
+.banner--service-link-item{
+	display: block;
+	margin-top: 0;
+
+	@include breakpoint(700px) {
+		display: inline-block;
+		margin-right: setting-get('rhythm') / 2;
+	}
+}
